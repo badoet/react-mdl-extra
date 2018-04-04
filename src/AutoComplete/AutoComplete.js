@@ -13,6 +13,7 @@ export default class AutoComplete extends Component {
 
   static propTypes = {
     align: PropTypes.string,
+    autoComplete: PropTypes.string,
     className: PropTypes.string,
     dataIndex: PropTypes.string.isRequired,
     disabled: PropTypes.bool,
@@ -76,7 +77,7 @@ export default class AutoComplete extends Component {
 
   render() {
     const {
-      align, className, dataIndex, disabled, error, floatingLabel,
+      align, autoComplete, className, dataIndex, disabled, error, floatingLabel,
       items, label, offset, readOnly, value, valueIndex,
     } = this.props
     const { focused, value: stateValue } = this.state
