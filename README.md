@@ -92,6 +92,7 @@ const items = [
 <AutoComplete
   label={'I will complete you'}
   items={items}
+  autoComplete="off"
   valueIndex={'id'}
   dataIndex={'name'}
 />
