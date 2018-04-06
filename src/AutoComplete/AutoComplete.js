@@ -112,6 +112,7 @@ export default class AutoComplete extends Component {
       floatingLabel,
       label,
       readOnly: disabled,
+      autoComplete,
       ref: ref => this.input = ref,
       type: 'text',
       onChange: this.onTextfieldChange,
