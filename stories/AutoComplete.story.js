@@ -85,6 +85,25 @@ storiesOf('AutoComplete', module)
       disabled
     />
   ))
+  .add('autocomplete off', () => (
+    <div>
+      <span>Turn off browser autofill</span>
+      <StatefulAutoComplete
+        label={'First Name'}
+        items={items1}
+        valueIndex={'id'}
+        dataIndex={'name'}
+        autoComplete="off"
+      />
+      <span>Browser default behaviour</span>
+      <StatefulAutoComplete
+        label={'Last Name'}
+        items={items1}
+        valueIndex={'id'}
+        dataIndex={'name'}
+      />
+    </div>
+  ))
   .add('lots of values', () => (
     <StatefulAutoComplete
       label={'I will complete you'}
